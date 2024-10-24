@@ -1,6 +1,6 @@
-RAILS_VERSIONS = ['>= 4.2.0', '< 6.2'].freeze
+RAILS_VERSIONS = ['>= 4.2.0', '< 8.0'].freeze
 
-$:.push File.expand_path("../lib", __FILE__)
+$:.push File.expand_path('lib', __dir__)
 
 # Maintain your gem's version:
 require "has_friendship/version"
@@ -33,5 +33,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency "byebug"
   # fix time zone error when opening server
   s.add_development_dependency 'tzinfo-data'
-
 end
